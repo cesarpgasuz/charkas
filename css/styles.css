@@ -13,6 +13,8 @@ body{
 .banner{
 	min-height: 500px;
 	background: var(--nf);
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .banner h1{
 	color: var(--cpri);
@@ -33,19 +35,20 @@ body{
 .tarjetas-r{
 	min-height: 500px;
 	padding-top: 80px;
+	padding-bottom: 40px;
 }
-.tarjetas-r p{
+.tarjetas-r h2{
 	color: var(--nb);
 	font-size: 24px;
 	font-weight: 400;
 	
 }
-.tarjetas-r p strong{
+.tarjetas-r h2 strong{
 	color: #000;
 	font-weight: 600;
 }
 .tarjetas-r-c{
-	justify-content: space-between;
+	justify-content: space-around;
 	display: flex;
 	margin-top: 30px;
 }
@@ -58,9 +61,9 @@ body{
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.35);
 	position: relative;
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
@@ -68,9 +71,9 @@ body{
 }
 .tarjetas-r-c .card:nth-child(4){
 	background: var(--csec);
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
 	
 }
 .tarjetas-r-c .card:hover{
@@ -79,9 +82,9 @@ body{
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 	color: #fff;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
 }
 .tarjetas-r-c .card:hover span{
 	bottom: 15px;
@@ -100,6 +103,9 @@ body{
 	font-weight: 600;
 	margin-top: 10px;
 }
+.tarjetas-r-c .card .etiqueta-empleos-2{
+	display: none;
+}
 .tarjetas-r-c .card span{
 	color: #fff;
 	font-size: 24px;
@@ -116,50 +122,24 @@ body{
 
 
 /* --------- seccion eventos -----------------*/
-.eventos{
-	width: 100%;
-	min-height: 430px;
-    background: #fafafa;
-	padding-top: 60px;
-	padding-bottom: 80px;
-
-}
 .eventos h2{
 	font-size: 24px;
 	font-weight: 600;
 	color: var(--nf);
+	margin-bottom: 32px;
 }
 
-.eventos .owl-carousel .owl-stage-outer {
-    padding-top: 30px;
-    padding-bottom: 20px;
+.eventos .eventos-card{
+	height: 400px;
+	
+	
+	
 }
-
-.eventos .owl-carousel .tarjetas-e{
-	border: none;
-	height: 200px;
-	width: 450px;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	border-radius:10px;
-	-webkit-box-shadow: inset 0px -103px 89px -32px rgba(0,0,0,0.5), inset 0px 125px 89px -33px rgba(0,0,0,0.5);
-	-moz-box-shadow: inset 0px -103px 89px -32px rgba(0,0,0,0.5), inset 0px 125px 89px -33px rgba(0,0,0,0.5);
-	box-shadow: inset 0px -103px 89px -32px rgba(0,0,0,0.5), inset 0px 125px 89px -33px rgba(0,0,0,0.5);
-	padding: 5%;
-}
-
-.eventos .owl-carousel .information{
-	color: white;
-}
-.eventos .owl-carousel .information h7{
-	font-size: 24px;
-	font-weight: 600;
-}
-.eventos .owl-carousel .information p{
-	font-size: 14px;
-	font-weight: 400;
-	margin-top: 4%;
-	margin-right: 20%;
+.eventos .eventos-card .infor-eve{
+	height: 100%;
+	width: 100%;
+	
+	background: red;
 }
 
 
@@ -186,9 +166,9 @@ body{
 .information-dest .c1{
 	font-size: 18px;
 	background: var(--cpri);
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
 	padding-top: 45px;
 	padding-bottom: 11px;
 	-moz-border-radius:10px;
@@ -213,9 +193,9 @@ body{
 	background: var(--csec);
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
 }
 .information-dest .c1:hover h3{
 	color: var(--nf);
@@ -229,9 +209,9 @@ body{
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
 	border-radius:10px;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(173,173,173,0.35);
 	padding-top: 5%;
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
@@ -253,9 +233,9 @@ body{
 	background: var(--csec);
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
 }
 .information-dest .c2:hover strong{
 	color: var(--nf);
@@ -351,9 +331,9 @@ body{
 .conoce a:hover{
 	background: var(--cpri);
 	color: #fff;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
 	text-decoration: none;
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
@@ -503,9 +483,9 @@ body{
 	display: inline-block;
 	text-align: center;
 	text-decoration: none;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
 	-moz-border-radius:50px;
 	-webkit-border-radius:50px;
 	border-radius:50px;
@@ -520,9 +500,9 @@ body{
 .dudas a:hover{
 	background: var(--cpri);
 	color: #fff;
-	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
-	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.25);
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(244,12,72,0.35);
 	-webkit-transition-duration: 0.8s;
 	transition-duration: 0.8s;
 }
@@ -602,3 +582,217 @@ body{
       -moz-transform: scale(0.8);
       }
   }
+
+
+
+
+/* --------------------------------------------- diseño responsivo -----------------------------------------------*/
+
+@media screen and (max-width: 1199px){
+	
+	.tarjetas-r-c .card {
+    	min-width: 200px;
+		min-height: 170px;
+	}
+	.tarjetas-r-c .card img{
+		width: 50px;
+	}
+	.tarjetas-r-c .card h3{
+		font-size: 16px;
+	}
+	
+}	
+
+@media screen and (max-width: 991px){
+	/* ---- estilos banner -------------*/
+	.banner{
+		min-height:350px;
+
+	}
+	
+	/*---- estilos tarjetas rapidas ------*/
+	.tarjetas-r h2 {
+		font-size: 18px;
+	}
+	
+	.tarjetas-r-c .card {
+    	min-width: 160px;
+		min-height: 160px;
+		padding-top: 20px;
+	}
+	.tarjetas-r-c .card img{
+		width: 50px;
+	}
+	.tarjetas-r-c .card h3{
+		font-size: 14px;
+	}
+	
+}
+
+@media screen and (max-width: 767px){
+	/* ---- estilos banner -------------*/
+	.banner{
+		text-align: center;
+	}
+	.banner img{
+		width:250px;
+
+	}
+	
+	/*---- estilos tarjetas rapidas ------*/
+	.tarjetas-r .paff{
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.tarjetas-r h2{
+		text-align: center !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tarjetas-r-c .card {
+    	min-width: 120px;
+		min-height: 120px;
+		padding-top: 15px;
+	}
+	.tarjetas-r-c .card img{
+		width: 40px;
+	}
+	.tarjetas-r-c .card h3{
+		font-size: 12px;
+	}
+	.tarjetas-r-c .card span{
+		display: none;
+	}
+	.tarjetas-r-c .card .etiqueta-empleos-1{
+		display: none;
+	}
+	.tarjetas-r-c .card .etiqueta-empleos-2{
+		display: block;
+	}
+	
+	/*---------------- seccion eventos ------------------*/
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+@media screen and (max-width: 575px){
+	
+	/* ---- estilos banner -------------*/
+	.banner{
+		height: 100vh;
+		margin: auto;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.banner h1{
+		font-size: 48px;
+	}
+	.banner p{
+		font-size: 16px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	/*---- estilos tarjetas rapidas ------*/
+	.tarjetas-r p {
+		font-size: 16px;
+	}
+	.tarjetas-r-c{
+		justify-content: space-around;
+	}
+	.tarjetas-r-c .card {
+    	min-width: 120px;
+		min-height: 100px;
+		padding-top: 10px;
+	}
+
+}
+
+@media screen and (max-width: 540px){
+	/*---- estilos tarjetas rapidas ------*/
+	.tarjetas-r p {
+		font-size: 18px;
+		
+	}
+	.tarjetas-r-c .card {
+    	min-width: 100px;
+		min-height: 60px;
+		padding-top: 5px;
+	}
+	
+	.tarjetas-r-c .card h3{
+		font-size: 12px;
+	}
+	
+	
+}
+
+
+@media screen and (max-width: 490px){
+	/*---- estilos tarjetas rapidas ------*/
+	.tarjetas-r-c{
+		justify-content: center;
+	}
+	.tarjetas-r-c .card {
+    	min-width: 150px;
+		min-height: 150px;
+		padding-top: 15px;
+		margin-bottom: 4%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.tarjetas-r-c .card img{
+		width: 60px;
+	}
+	
+	.tarjetas-r-c .card h3{
+		font-size: 12px;
+	}
+	
+	.eventos .eventos-card{
+		height: 200px;
+	}
+	
+}
+
+
+@media screen and (max-width: 440px){
+	/*---- carusel ------*/
+	
+	.eventos .carousel-control-prev, .eventos .carousel-control-next{
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 344px){
+	/*---- estilos tarjetas rapidas ------*/
+	.tarjetas-r-c{
+		justify-content: center;
+	}
+	.tarjetas-r-c .card {
+    	min-width: 110px;
+		min-height: 100px;
+		padding-top: 10px;
+		margin-bottom: 4%;
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.tarjetas-r-c .card img{
+		width: 35px;
+	}
+	
+	.tarjetas-r-c .card h3{
+		font-size: 12px;
+	}
+	
+	
+}
