@@ -32,6 +32,10 @@ body{
 	color: var(--csec);
 }
 
+.banner img{
+	padding-top: 50px;
+}
+
 /* ------ seccion tarjetas rapidas ----------*/
 .tarjetas-r{
 	padding-top: 80px;
