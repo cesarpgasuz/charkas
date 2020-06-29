@@ -10,6 +10,9 @@ body{
 	font-family: 'Montserrat', sans-serif !important;
 	/*font-family: 'Mitr', sans-serif ;*/
 }
+
+img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display: none; }
+
 /* ------ seccion banner ----------*/
 .banner{
 	min-height: 500px;
@@ -130,7 +133,7 @@ body{
 	background: #fafafa;
 	padding-top: 80px;
 	padding-bottom: 80px;
-	
+	position: relative;
 }
 .eventos h2{
 	font-size: 24px;
@@ -180,6 +183,66 @@ box-shadow: inset 200px 0px 71px 200px rgba(0,0,0,0.5);
 	padding: 2px 15px;
 	font-size: 18px;
 	font-weight: 600;
+}
+
+
+/* ---- estilos segunda tarjeta ----- */
+.eventos .img-eventos-i{
+	height: 600px;
+	width: 400px;
+	background: black;
+	position: absolute;
+	
+}
+
+
+.eventos .owl-carousel .tar-eve{
+	height: 220px;
+	width: 400px;
+	background: #1a2e35;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border-left: 8px solid var(--cpri);
+	padding: 5%;
+}
+
+.eventos .owl-carousel .mas-eve{
+	height: 220px;
+	width: 300px;
+	background: var(--cpri);
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding: 5%;
+}
+.eventos .owl-carousel .tar-eve strong{
+	color: yellow;
+	font-size: 12px;
+	font-weight: 300;
+}
+.eventos .owl-carousel .tar-eve h4{
+	color: var(--csec);
+	font-size: 18px;
+	font-weight: 600;
+}
+.eventos .owl-carousel .tar-eve p{
+	color: #93a1a6;
+	font-size: 12px;
+	margin-top: 15px;
+}
+.eventos .owl-carousel button{
+	width: 50px;
+	height: 50px;
+	background: var(--csec) !important;
+	-moz-border-radius:10px !important;
+	-webkit-border-radius:10px !important;
+	border-radius:10px !important;
+	outline: none;
+}
+.eventos .owl-carousel span{
+	font-weight: 900;
+	font-size: 32px;
 }
 
 
@@ -850,6 +913,14 @@ box-shadow: inset 200px 0px 71px 200px rgba(0,0,0,0.5);
 	.eventos .eventos-card .infor-eve span{
 		font-size: 16px;
 	}
+	
+	/* -------- 2 tarjetas ---- */
+	.eventos .owl-carousel .tar-eve{
+		height: 200px;
+		width: 250px;
+		
+	}
+	
 	
 	
 	/* ---- seccion informacion destacada */

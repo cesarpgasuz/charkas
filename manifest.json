@@ -1,15 +1,15 @@
 {
 	"icons" : [
 		{
-			"src": "https://daley5.000webhostapp.com/img/image-icon.png",
+			"src": "https://charkas.000webhostapp.com/img/image-icon.png",
 			"sizes": "1024x1024",
 			"type": "image/png"
 		}],
 	"name" : "CHARKAS",
 	"short_name" : "CHARKAS",
 	"description" : "Tu directorio de Doctor Mora",
-	"start_url" : "/",
-	"scope" : "/",
+	"start_url" : "./",
+	"scope" : "./",
 	"display" : "standalone",
 	"orientation" : "portrait",
 	"lang" : "es-MX",
