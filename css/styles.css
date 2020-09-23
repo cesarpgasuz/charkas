@@ -38,6 +38,45 @@ img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhos
 .banner img{
 	padding-top: 50px;
 }
+.banner .proximamente{
+	background: var(--csec);
+	font-size: 18px;
+	font-weight: 600;
+	padding: 8px 35px;
+	margin-bottom: 30px;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	-moz-box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	box-shadow: 0px 10px 25px 0px rgba(0,240,255,0.35);
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+	border-radius:50px;
+	color: #000;
+}
+
+/* --- seccion coronavirus --- */
+.s-coronavirus{
+	width: 100%;
+	height: auto;
+	background: var(--nm);
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+.s-coronavirus h3 a:link{
+	color: var(--csec);
+	text-decoration: none;
+}
+.s-coronavirus h3 a:hover{
+	border-bottom: 3px solid var(--csec);
+}
+.s-coronavirus h3 a:visited{
+	color: var(--csec);
+}
+
+
 
 /* ------ seccion tarjetas rapidas ----------*/
 .tarjetas-r{
@@ -615,6 +654,8 @@ box-shadow: inset 200px 0px 71px 200px rgba(0,0,0,0.5);
 	transition-duration: 0.8s;
 }
 
+
+
 .dudas .people{
 	display: flex;
 	align-items: center;
@@ -690,6 +731,16 @@ box-shadow: inset 200px 0px 71px 200px rgba(0,0,0,0.5);
       -moz-transform: scale(0.8);
       }
   }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1020,6 +1071,10 @@ box-shadow: inset 200px 0px 71px 200px rgba(0,0,0,0.5);
 		font-size: 16px;
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	
+	.banner .persona{
+		display: none;
 	}
 	/*---- estilos tarjetas rapidas ------*/
 	.tarjetas-r {

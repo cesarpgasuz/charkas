@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
+
 	 <!-- fuentes -->
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,900&display=swap" rel="stylesheet">  
 	<!--<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;600&display=swap" rel="stylesheet">-->
@@ -46,6 +47,22 @@
 	  <!-- Google ads -->
 	  <script data-ad-client="ca-pub-2150207930865442" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	  
+	  <!-- onesignal -->
+	  <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+		<script>
+		  window.OneSignal = window.OneSignal || [];
+		  OneSignal.push(function() {
+			OneSignal.init({
+			  appId: "d4e4bcec-16f8-4c3d-b778-80f1f602c359",
+			  notifyButton: {
+				enable: true,
+			  },
+			  subdomainName: "charkas",
+			});
+		  });
+		</script>
+	  
+	  
     <title>Charkas</title>
   </head>
   <body>
@@ -57,15 +74,24 @@
 				<div class="col-lg-6 col-md-6 ">
 					<h1>CHARKAS</h1>
 					<p>Charkas es una plataforma que te ayuda a encontrar negocios, contratar servicios, además de enterarte sobre todo lo que ocurre en <strong>Doctor Mora y sus Comunidades.</strong></p>
+					<p class="proximamente">Proximamente !!</p>
 				</div>
 				<div class="col-lg-6 col-md-6">
-					<img src="img/men.png" class="img-fluid" alt="" width="500px">
+					<img src="img/men.png" class="img-fluid persona" alt="" width="500px">
 				</div>
 			</div>
 		</div>  
 	</section>
 	  
-	  
+	<section class="s-coronavirus">
+	 	<div class="container">
+	  		<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h3><a href="coronavirus.html">Coronavirus Estatus</a></h3>
+				</div>
+			</div>
+		</div>
+	</section>  
 	  
 	<!-- seccion tarjetas rapidas -->  
 	 <section class="tarjetas-r">
@@ -321,7 +347,7 @@
 			<div class="row">
 				<div class="col-lg-5 col-md-12">
 				<h2><img src="img/megafono.png" class="img-fluid" alt="" width="64px">Reportes Doctor Mora</h2>
-				<p>En esta seccion puedes reportat lamparas fundidas, baches, caminos en mal estado, etc...</p>
+				<p>En esta seccion puedes reportar lamparas fundidas, baches, caminos en mal estado, etc...</p>
 					<img src="img/report.png" class="img-fluid image" alt="">
 				</div>
 				<div class="col-lg-7 col-md-12 information-r">
@@ -402,6 +428,8 @@
 					<a href="#">Formulario</a>
 					<h5>¿ Hay algun costo ?</h5>
 					<p><span>NO</span>, la plataforma es <strong>totalmente gratuita.</strong></p>
+					<h5>Te gusta la idea??</h5>
+					
 				</div>
 				<div class="col-lg-5 col-md-12 people">
 					<img src="img/people2.jpg" class="img-fluid" alt="">
@@ -411,12 +439,51 @@
 	  </section>
 	  
 	  
+		<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+       <h4 style="font-weight: bold">Igual la voy a hacer 😜😜</h4>
+      </div>
+      
+    </div>
+  </div>
+</div>
+	
+			<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel2"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+		  <p>Mandale un whatss a los desarrolladores y diles que si te gusta la idea. </p>
+       <a href="https://api.whatsapp.com/send?phone=524191389032&text=Me gusta la idea, dale 👍" class="btn btn-success">Mandar Mensaje</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+	
+	
+	
 	  <section class="dyxer">
 		  <div class="container">
 		  	<div class="row">
 				<div class="col-lg-12">
 					<h6><span>CHARKAS</span> es un proyecto de</h6>
-						<img src="img/logodyxer.png" class="img-fluid" alt="" width="285px">
+						<img src="img/v3.png" class="img-fluid" alt="" width="285px">
 				</div>  
 			</div>
 		  </div>
